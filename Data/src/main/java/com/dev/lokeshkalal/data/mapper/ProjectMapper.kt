@@ -4,7 +4,7 @@ import com.dev.lokeshkalal.data.model.ProjectEntity
 import com.dev.lokeshkalal.domain.model.Project
 import javax.inject.Inject
 
-class ProjectMapper @Inject constructor() : EntityMapper<ProjectEntity, Project> {
+open class ProjectMapper @Inject constructor() : EntityMapper<ProjectEntity, Project> {
     override fun mapToEntity(domain: Project): ProjectEntity {
         return ProjectEntity(
             domain.id, domain.name, domain.fullName,
