@@ -2,8 +2,9 @@ package com.dev.lokeshkalal.cache.mapper
 
 import com.dev.lokeshkalal.cache.model.CachedProject
 import com.dev.lokeshkalal.data.model.ProjectEntity
+import javax.inject.Inject
 
-class CachedProjectMapper : CacheMapper<CachedProject, ProjectEntity> {
+class CachedProjectMapper @Inject constructor(): CacheMapper<CachedProject, ProjectEntity> {
     override fun mapFromcached(type: CachedProject): ProjectEntity {
         return ProjectEntity(
             type.id, type.name, type.fullName, type.starCount,

@@ -1,4 +1,4 @@
-package com.dev.lokeshkalal.presentation;
+package com.dev.lokeshkalal.ui;
 
 import org.junit.Test;
 

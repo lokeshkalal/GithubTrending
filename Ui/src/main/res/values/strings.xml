@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ui</string>
+    <string name="bookmark_projects">Bookmark projects</string>
+    <string name="title_bookmarked">Bookmarked</string>
+</resources>
