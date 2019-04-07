@@ -41,6 +41,8 @@ class BrowseActivity : AppCompatActivity() {
         setUpBrowsRecyclerView()
     }
 
+
+
     override fun onStart() {
         super.onStart()
         browseViewModel.getProjects().observe(this,

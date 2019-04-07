@@ -72,17 +72,7 @@ class BookmarkedActivity : AppCompatActivity() {
 
     private fun setUpRecylcerView() {
         recycler_projects.layoutManager = LinearLayoutManager(this)
-    }
-
-    private fun setupScreenForSuccess(projects: List<Project>?) {
-        progress.visibility = View.GONE
-        projects?.let {
-            adapter.projects = it
-            adapter.notifyDataSetChanged()
-            recycler_projects.visibility = View.VISIBLE
-        } ?: run {
-
-        }
+        recycler_projects.adapter = adapter
     }
 
     private fun handleDataState(resource: Resource<List<ProjectView>>) {

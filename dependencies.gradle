@@ -35,9 +35,9 @@ ext {
     glassfishAnnotationVersion = '10.0-b28'
     archCompVersion = '1.1.1'
     roomVersion = '1.0.0'
-    mockitoAndroidVersion = '2.8.9'
-    espressoVersion = '3.0.0'
-    runnerVersion = '0.5'
+    mockitoAndroidVersion = '2.23.0'
+    espressoVersion = '3.1.0'
+    runnerVersion = '1.1.0'
 
 
     androidSupportRunnerVersion = '1.0.0'
@@ -171,13 +171,11 @@ ext {
             kotlinJUnit    : "org.jetbrains.kotlin:kotlin-test-junit:${kotlin_version}",
             assertj        : "org.assertj:assertj-core:${assertJVersion}",
             mockito        : "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoVersion}",
-            supportRunner  : "com.android.support.test:runner:${androidSupportRunnerVersion}",
-            supportRules   : "com.android.support.test:rules:${androidSupportRulesVersion}",
             mockitoAndroid : "org.mockito:mockito-android:${mockitoAndroidVersion}",
-            espressoCore   : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
-            espressoIntents: "com.android.support.test.espresso:espresso-intents:${espressoVersion}",
-            espressoContrib: "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
-            androidRunner  : "com.android.support.test:runner:${runnerVersion}",
-            androidRules   : "com.android.support.test:rules:${runnerVersion}"
+            espressoCore   : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            espressoIntents: "androidx.test.espresso:espresso-intents:${espressoVersion}",
+            espressoContrib: "androidx.test.espresso:espresso-contrib:${espressoVersion}",
+            androidRunner  : "androidx.test:runner:${runnerVersion}",
+            androidRules   : "androidx.test:rules:${runnerVersion}"
     ]
 }
